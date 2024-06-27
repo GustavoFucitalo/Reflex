@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --core0: #F23E16;
+    --core1: #E25111;
+    --core2: #64311e;
+    --core3: #0d0d0db1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: white;
+}
+header {
+    background-image: linear-gradient(to bottom, var(--core0), var(--core2));
+    min-height: 100px;
+    padding-top: 40px;
+    text-align: center;
+}
+.logo {
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow: 2px 7px 7px rgba(0, 0, 0, 0.535);
+}
+nav {
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+
+    a {
+        color: white;
+
+        border-radius: 4px;
+        padding: 15px;
+        text-decoration: none;
+        margin: 10px;
+
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+
+        transition-duration: 1s;
+
+        &:hover {
+            color: white;
+            background-color: #F23E16;
+            filter: brightness(1);
+        }
+    }
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#linkContatos {
+    font-weight: bold;
+    text-align: center;
+    
+
+    a {
+        text-decoration: none;
+        color: black;
+    
+        &:hover {
+            text-decoration: underline;
+            filter: brightness(1);
+        }
+    }
+}
+
+
+.footer {
+    background-color: black;
+    color: orange;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0px;
+}
